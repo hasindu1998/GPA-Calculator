@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100 flex justify-center items-center h-screen">
+    <div class="w-full max-w-md p-6 bg-white shadow-md rounded-lg">
+        <h1 class="text-2xl font-bold mb-4 text-center">GPA Calculator</h1>
+        <form id="moduleCountForm" class="flex flex-col space-y-4">
+            <label for="moduleCount" class="text-lg">Enter Number of Modules</label>
+            <input type="number" id="moduleCount" min="1" class="input-field" placeholder="e.g., 5">
+            <button type="button" class="btn-primary" onclick="submitModuleCount()">Submit</button>
+        </form>
+        
+        <form id="moduleDetailsForm" class="hidden flex-col space-y-4 mt-4"></form>
+        <div id="gpaResult" class="hidden mt-4 p-4 bg-green-100 rounded-lg text-center"></div>
+    </div>
+    <script src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.13/jspdf.plugin.autotable.min.js"></script>
+
+
+</body>
+</html>
